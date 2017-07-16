@@ -1,5 +1,7 @@
 # Link preload test case
 
+**Only since creating this test case did I found out the preload story is suprisingle undetermined for modules, which is incredibly worrying given preloading of deep trees is absolutely necessary for performance. Reference - https://github.com/whatwg/fetch/issues/486**.
+
 In this test case we load a deep module tree (999 modules), with a preload on the last module using:
 
 ```html
